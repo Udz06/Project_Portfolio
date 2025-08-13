@@ -4,6 +4,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Home</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
     <style>
         /* Reset CSS */
         * {
@@ -140,7 +141,7 @@
             position: relative;
             width: 32vw;
             border-radius: 50%;
-            box-shadow: 0 0 25px solid #b74b4b;
+            box-shadow: 0 0 25px #b74b4b;
             cursor: pointer;
             transition: 0.2s linear;
         }
@@ -199,28 +200,20 @@
             overflow: hidden;
             white-space: nowrap;
             border-right: 3px solid #b74b4b;
-            animation: typing 4s steps(30, end), blink 0.75s step-end infinite;
+            animation: typing 4s steps(30, end) infinite alternate, blink 0.75s step-end infinite;
         }
 
         @keyframes typing {
-            from {
-                width: 0;
-            }
-            to {
-                width: 100%;
-            }
+            from { width: 0; }
+            to { width: 100%; }
         }
 
         @keyframes blink {
-            50% {
-                border-color: transparent;
-            }
+            50% { border-color: transparent; }
         }
 
         @media (max-width: 1000px) {
-            .home {
-                gap: 4rem;
-            }
+            .home { gap: 4rem; }
         }
 
         @media (max-width: 995px) {
@@ -228,29 +221,20 @@
                 flex-direction: column;
                 margin: 5rem 4rem;
             }
-
-            .home .home-content h3 {
-                font-size: 2.5rem;
-            }
-
-            .home-content h1 {
-                font-size: 5rem;
-            }
-
-            .home-img img {
-                width: 70vw;
-                margin-top: 4rem;
-            }
+            .home .home-content h3 { font-size: 2.5rem; }
+            .home-content h1 { font-size: 5rem; }
+            .home-img img { width: 70vw; margin-top: 4rem; }
+        }
     </style>
 </head>
 <body>
     <section class="home" id="home">
         <div class="home-img">
-            <img src="https://i.pinimg.com/736x/2d/e5/8f/2de58f5120f2c39f40987c4c52c3e406.jpg" alt="Description of Image">
+            <img src="https://i.pinimg.com/736x/2d/e5/8f/2de58f5120f2c39f40987c4c52c3e406.jpg" alt="Justin's Profile">
         </div>
         <div class="home-content">
             <h1>Hi, It's <span>Justin</span></h1>
-            <h3 class="typing-text">and my niche is <span></span></h3>
+            <h3 class="typing-text">and my niche is Web Development</h3>
             <p>Third year college student with knowledge in video and photo editing. Passionate about using technology to solve real-world problems, especially in education, and eager to continue growing my skills and contribute to innovative projects.</p>
             <div class="social-icons">
                 <a href="https://www.facebook.com/J.Mendozaaaaaaaaa" target="_blank"><i class="fa-brands fa-facebook"></i></a>
